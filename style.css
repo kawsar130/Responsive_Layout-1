@@ -1,0 +1,99 @@
+body {
+	margin: auto 0;
+	font-family: Arial;
+}
+
+
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav {
+	display: flex;
+	list-style:  none;
+	font-size: 1.2em;
+	margin:  0;
+	background: linear-gradient(#a66, #c88);
+}
+
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font-size: 0.8em;
+	}
+}
+
+li {
+	padding: 20px;
+}
+
+li:hover {
+	background: darkred;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.push {
+	margin-left: auto;
+}
+
+.cover {
+	background: white url("./Photo/cover4c.jpg") no-repeat center center;
+	width: 100%;
+	height: 35vmax;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.shade {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+
+.box > img {
+  width: 100%;
+}
+
+.box > p {
+	font-weight: bold;
+	font-size: 1.5em;
+	display: grid;
+	justify-items: center;
+}
+
+.box {
+	background-color: #daa;
+	padding: 100px;
+	margin: 20px;
+	border: 3px solid #888;
+	transition: all 0.5s ease;
+}
+
+.box:hover {
+	background-color: tomato;
+	padding: 80px;
+}
+
+footer {
+	text-align: center;
+	background: #d99;
+	height: 3em;
+	font-size: 3em;
+	padding-top: 1.5em;
+	font-weight: bold;
+}
