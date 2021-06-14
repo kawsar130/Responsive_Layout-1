@@ -14,7 +14,7 @@ body {
 .main-nav {
 	display: flex;
 	list-style:  none;
-	font-size: 1.2em;
+	font-size: 2em;
 	margin:  0;
 	background: linear-gradient(#a66, #c88);
 }
